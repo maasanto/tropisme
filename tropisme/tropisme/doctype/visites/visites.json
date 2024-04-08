@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-21 09:26:48.146481",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "heure",
+  "nom_de_l_organisme",
+  "type_de_l_organisme",
+  "contact",
+  "quartier_prioritaire_de_la_ville",
+  "nom_du_quartier",
+  "nombre_de_participants",
+  "tranche_d_age"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "heure",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Heure"
+  },
+  {
+   "fieldname": "nom_de_l_organisme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nom de l organisme",
+   "options": "Organisme"
+  },
+  {
+   "fetch_from": "nom_de_l_organisme.type_d_organisme",
+   "fieldname": "type_de_l_organisme",
+   "fieldtype": "Data",
+   "label": "Type de l organisme",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nom_de_l_organisme.contact",
+   "fetch_if_empty": 1,
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact"
+  },
+  {
+   "default": "0",
+   "fetch_from": "nom_de_l_organisme.quartier_prioritaire_de_la_ville",
+   "fieldname": "quartier_prioritaire_de_la_ville",
+   "fieldtype": "Check",
+   "label": "Quartier Prioritaire de la ville",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nom_de_l_organisme.nom_du_quartier",
+   "fieldname": "nom_du_quartier",
+   "fieldtype": "Data",
+   "label": "Nom du Quartier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nombre_de_participants",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Nombre de participants"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tranche_d_age",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tranche d'\u00e2ge",
+   "options": "3-6 ans (Maternelle)\n6-11 ans (Primaire)\n11-15 ans (Coll\u00e8ge)\n15-18 ans (Lyc\u00e9e)\nAdulte\nAdulte en insertion\nS\u00e9niors"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-08 13:58:55.949271",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Visites",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Event",
+  "enabled": 1,
+  "modified": "2024-04-08 13:59:17.649858",
+  "module": "Tropisme",
+  "name": "Event-Client",
+  "script": "const color_map = {\n    \"Programmation\": \"#F5B041\",\n    \"Privatisation\": \"#009688\",\n    \"Pôle bien-être\": \"#85C1E9\",\n    \"Atelier\": \"#F7DC6F\",\n    \"Travaux\": \"#848889\",\n    \"Autres\": \"#bfc4c4\",\n    \"Animation pro\": \"#2980B9\",\n    \"RDV pro\" : \"#A2D9CE\",\n    \"Jeune public\" : \"#D7BDE2\",\n    \"Foodisme\" : \"#FFECB3\",\n    \"Exposition\" : \"#de633d\",\n    \"Résidence\" : \"#da8989\",\n    \"En ligne\" : \"#000000\",\n    \"Montage/Démontage\" :\"#6f7071\",\n    \"Médiation\" :\"#e0d6e5\",\n    \"Réservations Café Tropisme\" :\"#FFECB3\",\n    \"Animation Pro\" :\"#A2D9CE\"\n}\n\n\nfrappe.ui.form.on('Event', {\n\tonload(frm) {\n\t\tfrm.set_query('project', function(doc) {\n\t\t\treturn {\n\t\t\t\tfilters: {\n\t\t\t\t\t\"status\": \"Open\"\n\t\t\t\t}\n\t\t\t};\n\t\t});\n\t\t\n\t\tfrm.set_query('employe', 'equipe_technique', function(doc) {\n\t\t\treturn {\n\t\t\t\tfilters: {\n\t\t\t\t\t\"employment_type\": \"Intermittent\"\n\t\t\t\t}\n\t\t\t};\n\t\t});\n\t\t\n\t\tfrm.set_value(\"color\", color_map[frm.doc.event_category] || '');\n\t\t\n\t},\n\trefresh(frm) {\n\t  if (!frm.is_new()) {\n\t\t    frm.add_custom_button(__(\"Créer un devis\"), () => {\n\t\t        frm.trigger(\"make_quotation\")\n\t\t    })\n\t\t}\n\t\t\n\t\tfrm.trigger(\"check_bookings_and_assignments\")\n\t},\n\tbefore_save(frm) {\n\t   if (frm.is_new() && frm.doc.status == \"Validated\") {\n\t       frm.trigger('show_technical_team_dialog')\n\t   }\n\t},\n\tevent_category(frm) {\n\t    frm.set_value(\"color\", color_map[frm.doc.event_category] || '');\n\t},\n\tstatus(frm) {\n\t    if (frm.doc.status == \"Validated\") {\n\t        frm.trigger('show_technical_team_dialog')\n\t    }\n\t},\n\t\n\tshow_technical_team_dialog(frm) {\n\t    const dialog = new frappe.ui.Dialog({\n\t        title: __(\"L'équipe\"),\n\t\t\tfields: [\n\t\t\t\t{\n\t\t\t\t\tfieldname: \"technical_team_required\",\n\t\t\t\t\tlabel: \"Avez-vous besoin d'une équipe technique ?\",\n\t\t\t\t\tfieldtype: \"Check\",\n\t\t\t\t\tdefault: frm.doc.technical_team_required\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\tfieldname: \"security_team_required\",\n\t\t\t\t\tlabel: \"Avez-vous besoin d'une équipe de sécurité ?\",\n\t\t\t\t\tfieldtype: \"Check\",\n\t\t\t\t\tdefault: frm.doc.security_team_required\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\tfieldname: \"cleaning_team_required\",\n\t\t\t\t\tlabel: \"Avez-vous besoin d'une équipe de ménage ?\",\n\t\t\t\t\tfieldtype: \"Check\",\n\t\t\t\t\tdefault: frm.doc.cleaning_team_required\n\t\t\t\t},\n\t\t\t],\n\t\t\tprimary_action_label: \"Valider\",\n\t\t\tprimary_action: (data) => {\n\t\t\t    frm.set_value(\"technical_team_required\", data.technical_team_required);\n\t\t\t    frm.set_value(\"security_team_required\", data.security_team_required);\n\t\t\t    frm.set_value(\"cleaning_team_required\", data.cleaning_team_required);\n\t\t\t    dialog.hide()\n\t\t\t}\n\t    })\n\t    \n\t    dialog.show()\n\t},\n\t\n\tmake_quotation(frm) {\n\t    frappe.prompt(\n\t\t\t{\n\t\t\t\tfieldtype: \"Link\",\n\t\t\t\tlabel: \"Code Analytique\",\n\t\t\t\tfieldname: \"cost_center\",\n\t\t\t\treqd: 1,\n\t\t\t\toptions: \"Cost Center\"\n\t\t\t},\n\t\t\tfunction(data) {\n\t\t\t   return frappe.call({\n        \t\t\tmethod: \"get_quotation_from_event\",\n        \t\t\targs: {\n        \t\t\t\t\"name\": frm.doc.name,\n        \t\t\t\t\"doc\": frm.doc,\n        \t\t\t\t\"cost_center\": data.cost_center\n        \t\t\t}\n        \t\t}).then(r => {\n        \t\t    console.log(r.message)\n        \t\t    r.message.__islocal = 1\n        \t\t\tconst doclist = frappe.model.sync(r.message);\n        \t\t\tfrappe.set_route(\"Form\", doclist[0].doctype, doclist[0].name);\n        \t\t}); \n\t\t\t});\n\t},\n\t\n\tcheck_bookings_and_assignments(frm) {\n\t    if (frm.is_new()) {\n\t        return\n\t    }\n\n\t    frappe.call({\n\t       method: \"get_bookings_and_assignee\",\n\t       args: {\n\t           \"event\": frm.doc.name\n\t       }\n\t   }).then(r => {\n\t       if (!r.message.bookings.length) {\n\t           frappe.show_alert({\n\t               message: \"Veuillez réserver au moins une salle pour cet événement\",\n\t               indicator: \"orange\"\n\t           })\n\t       }\n\t       \n\t       if (!r.message.assignees.length) {\n\t           frappe.show_alert({\n\t               message: \"Veuillez attribuer ce ticket à au moins une personne\",\n\t               indicator: \"orange\"\n\t           })\n\t       }\n\t   })\n\t}\n})\n\nfrappe.ui.form.on('Equipe Securite', {\n\tarrivee(frm, cdt, cdn) {\n\t\tcalculate_hours(frm, cdt, cdn)\n\t},\n\tdepart(frm, cdt, cdn) {\n\t\tcalculate_hours(frm, cdt, cdn)\n\t},\n\tchange(frm, cdt, cdn) {\n\t\tconst row = locals[cdt][cdn]\n\t\tif (!row.debut) {\n\t\t    frappe.model.set_value(cdt, cdn, \"arrivee\", frm.doc.starts_on)\n\t\t}\n\n\t\tif (!row.fin) {\n\t\t    frappe.model.set_value(cdt, cdn, \"depart\", frm.doc.ends_on)\n\t\t}\n\t},\n\t\n\tequipe_securite_add(frm, cdt, cdn) {\n\t    const row = locals[cdt][cdn]\n\t\tif (!row.debut) {\n\t\t    frappe.model.set_value(cdt, cdn, \"arrivee\", frm.doc.starts_on)\n\t\t}\n\n\t\tif (!row.fin) {\n\t\t    frappe.model.set_value(cdt, cdn, \"depart\", frm.doc.ends_on)\n\t\t}\n\t}\n})\n\n\nfrappe.ui.form.on('Equipe Menage', {\n\tchange(frm, cdt, cdn) {\n\t\tconst row = locals[cdt][cdn]\n\t\tif (!row.debut) {\n\t\t    frappe.model.set_value(cdt, cdn, \"debut\", frm.doc.starts_on)\n\t\t}\n\n\t\tif (!row.fin) {\n\t\t    frappe.model.set_value(cdt, cdn, \"fin\", frm.doc.ends_on)\n\t\t}\n\t},\n\t\n\tequipe_menage_add(frm, cdt, cdn) {\n\t    const row = locals[cdt][cdn]\n\t\tif (!row.debut) {\n\t\t    frappe.model.set_value(cdt, cdn, \"debut\", frm.doc.starts_on)\n\t\t}\n\n\t\tif (!row.fin) {\n\t\t    frappe.model.set_value(cdt, cdn, \"fin\", frm.doc.ends_on)\n\t\t}\n\t}\n})\n\nfrappe.ui.form.on('Equipe Technique', {\n    equipe_technique_add(frm, cdt, cdn) {\n\t    const row = locals[cdt][cdn]\n\t\tif (!row.jour) {\n\t\t    frappe.model.set_value(cdt, cdn, \"jour\", frm.doc.starts_on)\n\t\t}\n\t}\n})\n\nconst calculate_hours = (frm, cdt, cdn) => {\n    const row = locals[cdt][cdn]\n    if (row.arrivee && row.depart) {\n        frappe.model.set_value(cdt, cdn, \"nombre_dheures\", flt(frappe.datetime.get_minute_diff(row.depart, row.arrivee) / 60, 2))\n    }\n}",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Project",
+  "enabled": 1,
+  "modified": "2024-04-08 13:59:17.894624",
+  "module": "Tropisme",
+  "name": "Project-Client",
+  "script": "frappe.ui.form.on('Project', {\n\tsetup: function(frm) {\n\t\tfrm.dashboard.add_transactions([\n\t\t\t{\n\t\t\t\t'items': ['Event'],\n\t\t\t\t'label': __('Events')\n\t\t\t}\n\t\t])\n\t},\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Customer",
+  "enabled": 1,
+  "modified": "2024-04-08 13:59:17.808001",
+  "module": "Tropisme",
+  "name": "Customer-Client",
+  "script": "frappe.ui.form.on('Customer', {\n\tsetup: function(frm) {\n\t    frm.trigger(\"hide_dashboard\")\n\t\tfrm.dashboard.add_transactions([\n\t\t\t{\n\t\t\t\t'items': ['Event'],\n\t\t\t\t'label': __('Events')\n\t\t\t}\n\t\t])\n\t},\n\trefresh: function(frm) {\n\t    frm.trigger(\"hide_dashboard\")\n\t},\n\thide_dashboard: function(frm) {\n\t    frm.dashboard.heatmap_area.hide()\n\t\tfrm.dashboard.wrapper.find(\".custom\").hide()\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Revue de presse",
+  "enabled": 1,
+  "modified": "2024-04-08 13:59:17.853610",
+  "module": "Tropisme",
+  "name": "Revue de presse-Client",
+  "script": "frappe.ui.form.on('Revue de presse', {\n\tcontact(frm) {\n\t    if (frm.doc.contact) {\n\t       frappe.model.with_doc(\"Contact\", frm.doc.contact, () => {\n    \t\t    const doc = frappe.get_doc(\"Contact\", frm.doc.contact)\n    \t\t    const customers = doc.links.filter(f => f.link_doctype === \"Customer\")\n    \t\t    if (customers.length) {\n    \t\t        frm.set_value(\"client\", customers[0].link_name)\n    \t\t    } else {\n    \t\t        frappe.msg(\"Veuillez associer ce contact à un client avant de créer une revue de presse.\")\n    \t\t        frm.set_value(\"client\", \"\")\n    \t\t    }\n    \t\t})   \n\t    }\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Quotation",
+  "enabled": 1,
+  "modified": "2024-04-08 13:59:17.774451",
+  "module": "Tropisme",
+  "name": "Quotation-Form",
+  "script": "frappe.ui.form.on('Quotation', {\n\tcost_center(frm) {\n\t    frm.doc.items.map(item => {\n\t        frappe.model.set_value(\"Quotation Item\", item.name, \"cost_center\", frm.doc.cost_center)\n\t    })\n\t},\n\t\n\tproject(frm) {\n\t    frm.doc.items.map(i => {\n\t        frappe.model.set_value(i.doctype, i.name, \"project\", frm.doc.project)\n\t    })\n\t},\n\t\n\tevent(frm) {\n\t    frm.doc.items.map(i => {\n\t        frappe.model.set_value(i.doctype, i.name, \"event\", frm.doc.event)\n\t    })\n\t}\n})",
+  "view": "Form"
+ }
+]

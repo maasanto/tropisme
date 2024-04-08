@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-07 18:36:36.249625",
+ "default_email_template": "Mail fiche Orga (Ne pas utiliser depuis un \u00e9v\u00e9nement)",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_infos_evenement",
+  "contact_organisateur_column",
+  "nom_organisateur",
+  "prenom_organisateur",
+  "fonction_organisateur",
+  "email_organisateur",
+  "telephone_organisateur",
+  "column_break_8",
+  "nom_evenement",
+  "sous_titre_evenement",
+  "date_et_heure_de_d\u00e9but",
+  "date_et_heure_de_fin",
+  "section_break_12",
+  "billeterie",
+  "prix",
+  "column_break_14",
+  "url_billeterie",
+  "section_break_15",
+  "jauge",
+  "autres_informations",
+  "infos_communication_section",
+  "contact_communication_column",
+  "nom_communication",
+  "prenom_communication",
+  "fonction_communication",
+  "email_communication",
+  "telephone_communication",
+  "column_break_25",
+  "texte_court",
+  "texte_complet",
+  "bio_artiste",
+  "partenaires",
+  "url_communication",
+  "pieces_jointes",
+  "infos_techniques_section",
+  "contact_technique_column",
+  "nom_technique",
+  "prenom_technique",
+  "fonction_technique",
+  "email_technique",
+  "telephone_technique",
+  "fiches_techniques",
+  "html_40",
+  "section_break_42",
+  "evenement",
+  "naming_series",
+  "first_approver"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_infos_evenement",
+   "fieldtype": "Section Break",
+   "label": "INFOS \u00c9V\u00c9NEMENT"
+  },
+  {
+   "fieldname": "contact_organisateur_column",
+   "fieldtype": "Column Break",
+   "label": "Contact organisateur"
+  },
+  {
+   "fieldname": "nom_organisateur",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom_organisateur",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "fonction_organisateur",
+   "fieldtype": "Data",
+   "label": "Fonction"
+  },
+  {
+   "fieldname": "email_organisateur",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telephone_organisateur",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nom_evenement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom de l'\u00e9v\u00e9nement"
+  },
+  {
+   "fieldname": "sous_titre_evenement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sous-titre de l'\u00e9v\u00e9nement"
+  },
+  {
+   "fieldname": "date_et_heure_de_d\u00e9but",
+   "fieldtype": "Datetime",
+   "label": "Date et Heure de d\u00e9but"
+  },
+  {
+   "fieldname": "date_et_heure_de_fin",
+   "fieldtype": "Datetime",
+   "label": "Date et Heure de fin"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "billeterie",
+   "fieldtype": "Select",
+   "label": "Votre \u00e9v\u00e9nement a-t-il une billetterie ?",
+   "options": "Oui\nNon"
+  },
+  {
+   "depends_on": "eval:doc.billeterie==\"Oui\"",
+   "fieldname": "prix",
+   "fieldtype": "Currency",
+   "label": "Prix",
+   "options": "EUR"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.billeterie==\"Oui\"",
+   "fieldname": "url_billeterie",
+   "fieldtype": "Small Text",
+   "label": "Merci d\u2019indiquer l\u2019url \u00e0 renseigner"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jauge",
+   "fieldtype": "Data",
+   "label": "Jauge"
+  },
+  {
+   "description": "Informations sp\u00e9cifiques, si \u00e9v\u00e9nement jeune public, merci d\u2019indiquer \u00e0 partir et jusqu\u2019\u00e0 quel \u00e2ge il est accessible\u2026",
+   "fieldname": "autres_informations",
+   "fieldtype": "Small Text",
+   "label": "Autres informations"
+  },
+  {
+   "fieldname": "infos_communication_section",
+   "fieldtype": "Section Break",
+   "label": "INFOS COMMUNICATION"
+  },
+  {
+   "fieldname": "contact_communication_column",
+   "fieldtype": "Column Break",
+   "label": "Contact communication"
+  },
+  {
+   "fieldname": "nom_communication",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom_communication",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "fonction_communication",
+   "fieldtype": "Data",
+   "label": "Fonction"
+  },
+  {
+   "fieldname": "email_communication",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telephone_communication",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Baseline, moins de 200 caract\u00e8res",
+   "fieldname": "texte_court",
+   "fieldtype": "Small Text",
+   "label": "Texte court"
+  },
+  {
+   "description": "Si d\u00e9roul\u00e9 sp\u00e9cifique, programme de journ\u00e9e ou lineup, merci de l\u2019indiquer",
+   "fieldname": "texte_complet",
+   "fieldtype": "Text Editor",
+   "label": "Texte de pr\u00e9sentation complet"
+  },
+  {
+   "description": "Si rencontre ou atelier professionnel, conf\u00e9rence\u2026",
+   "fieldname": "bio_artiste",
+   "fieldtype": "Small Text",
+   "label": "Bio artiste/intervenant"
+  },
+  {
+   "description": "S\u2019il faut mettre des logos, merci de nous les envoyer en format .jpeg et num\u00e9rot\u00e9s par ordre d\u2019apparition",
+   "fieldname": "partenaires",
+   "fieldtype": "Small Text",
+   "label": "Partenaires \u00e0 mentionner dans la communication"
+  },
+  {
+   "fieldname": "url_communication",
+   "fieldtype": "Small Text",
+   "label": "URL"
+  },
+  {
+   "description": "Merci de joindre ici :<br>\n    \u2022 Un ou plusieurs visuels en bonne d\u00e9finition (au moins un visuel sans texte car l\u2019image sera crop\u00e9e au format 4:3 sur notre site Internet)<br>\n    \u2022 Tout \u00e9l\u00e9ment qui nous permettra de communiquer sur votre projet (bande-annonce, vid\u00e9o live, clip, bandcamp, etc.)<br>\n    \u2022 Les logos (si logos partenaires \u00e0 faire figurer, en format png avec transparence ou jpeg, num\u00e9rot\u00e9s par ordre d\u2019apparition)",
+   "fieldname": "pieces_jointes",
+   "fieldtype": "Table",
+   "label": "Pi\u00e8ces jointes",
+   "options": "Pieces Jointes Fiche Organisateur"
+  },
+  {
+   "fieldname": "infos_techniques_section",
+   "fieldtype": "Section Break",
+   "label": "INFOS TECHNIQUES"
+  },
+  {
+   "fieldname": "contact_technique_column",
+   "fieldtype": "Column Break",
+   "label": "Contact technique"
+  },
+  {
+   "fieldname": "nom_technique",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom_technique",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "fonction_technique",
+   "fieldtype": "Data",
+   "label": "Fonction"
+  },
+  {
+   "fieldname": "email_technique",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telephone_technique",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "fiches_techniques",
+   "fieldtype": "Table",
+   "label": "Merci de joindre ici les fiches techniques li\u00e9es \u00e0 votre \u00e9v\u00e9nement",
+   "options": "Pieces Jointes Fiche Organisateur"
+  },
+  {
+   "fieldname": "html_40",
+   "fieldtype": "HTML",
+   "options": "NB : les hospitality rider sont \u00e0 la charge de l\u2019organisateur"
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evenement",
+   "fieldtype": "Link",
+   "label": "\u00c9v\u00e9nement",
+   "options": "Event"
+  },
+  {
+   "default": "FICHE-ORGA-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "FICHE-ORGA-.YYYY.-"
+  },
+  {
+   "fieldname": "first_approver",
+   "fieldtype": "Link",
+   "label": "First approver",
+   "options": "User",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-08 13:58:54.992324",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Fiche Organisateur",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Employee",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "fiche-organisateur",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -49,6 +49,12 @@ app_license = "gpl-3.0"
 # 	"Role": "home_page"
 # }
 
+fixtures = [
+	{"dt": "Server Script"},
+	{"dt": "Client Script"},
+	{"dt": "Notification", "filters": {"is_standard": False}}
+]
+
 # Generators
 # ----------
 

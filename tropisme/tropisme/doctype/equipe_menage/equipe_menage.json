@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-02 13:53:52.029889",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "debut",
+  "fin",
+  "type_passage",
+  "commentaires"
+ ],
+ "fields": [
+  {
+   "fieldname": "debut",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Heure de d\u00e9but",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fin",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Heure de fin ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_passage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type de passage",
+   "options": "Passage avant \u00e9v\u00e9nement\nPassage apr\u00e8s \u00e9v\u00e9nement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commentaires",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Commentaires"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-08 13:58:56.196232",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Equipe Menage",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
