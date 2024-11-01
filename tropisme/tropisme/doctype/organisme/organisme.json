@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nom_de_l_organisme",
+ "creation": "2022-04-21 09:26:32.854230",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_de_l_organisme",
+  "type_d_organisme",
+  "contact",
+  "quartier_prioritaire_de_la_ville",
+  "nom_du_quartier"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_de_l_organisme",
+   "fieldtype": "Data",
+   "label": "Nom de l'organisme",
+   "unique": 1
+  },
+  {
+   "fieldname": "type_d_organisme",
+   "fieldtype": "Select",
+   "label": "Type d'organisme",
+   "options": "\u00c9cole primaire\nColl\u00e8ge\nLyc\u00e9e\nUniversit\u00e9 ou \u00c9cole sup\u00e9rieur\nCentre de loisir\nAssociation\nEHPAD\nIME"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "default": "0",
+   "fieldname": "quartier_prioritaire_de_la_ville",
+   "fieldtype": "Check",
+   "label": "Quartier Prioritaire de la ville"
+  },
+  {
+   "fieldname": "nom_du_quartier",
+   "fieldtype": "Data",
+   "label": "Nom du Quartier"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-01 18:57:59.999499",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Organisme",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "organisme",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

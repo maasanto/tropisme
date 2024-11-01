@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-07 15:40:41.058933",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unites",
+  "type_agent",
+  "arrivee",
+  "depart",
+  "nombre_dheures",
+  "tarif"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "default": "1",
+   "fieldname": "unites",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Unit\u00e9s",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "type_agent",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type d'agent",
+   "options": "Agent de S\u00e9curit\u00e9\nAgent Coordinateur ou SSIAP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arrivee",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Heure d'arriv\u00e9e"
+  },
+  {
+   "fieldname": "depart",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Heure de d\u00e9part"
+  },
+  {
+   "columns": 1,
+   "fieldname": "nombre_dheures",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Nombre d'heures",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tarif",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tarif",
+   "options": "Heure\nHeure Dimanche et Jours F\u00e9ri\u00e9s"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-01 18:57:23.284189",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Equipe Securite",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

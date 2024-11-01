@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-21 15:34:31.503347",
+ "default_email_template": "Mail fiche Orga (Ne pas utiliser depuis un \u00e9v\u00e9nement)",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_contact_organisateur",
+  "nom_organisateur",
+  "prenom_organisateur",
+  "fonction_organisateur",
+  "email_organisateur",
+  "telephone_organisateur",
+  "structure_section",
+  "nom_de_la_structure",
+  "type_de_structure",
+  "adresse_postale",
+  "contact",
+  "siret",
+  "section_break_42",
+  "evenement",
+  "naming_series",
+  "first_approver"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_contact_organisateur",
+   "fieldtype": "Section Break",
+   "label": "CONTACT ORGANISATEUR"
+  },
+  {
+   "fieldname": "nom_organisateur",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom_organisateur",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "fonction_organisateur",
+   "fieldtype": "Data",
+   "label": "Fonction"
+  },
+  {
+   "fieldname": "email_organisateur",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telephone_organisateur",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "structure_section",
+   "fieldtype": "Section Break",
+   "label": "STRUCTURE"
+  },
+  {
+   "fieldname": "nom_de_la_structure",
+   "fieldtype": "Data",
+   "label": "Nom de la structure"
+  },
+  {
+   "fieldname": "type_de_structure",
+   "fieldtype": "Data",
+   "label": "Type de structure"
+  },
+  {
+   "fieldname": "adresse_postale",
+   "fieldtype": "Small Text",
+   "label": "Adresse Postal (Facturation)"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Small Text",
+   "label": "Contact (Facturation)"
+  },
+  {
+   "fieldname": "siret",
+   "fieldtype": "Data",
+   "label": "N\u00b0 SIRET"
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evenement",
+   "fieldtype": "Link",
+   "label": "\u00c9v\u00e9nement",
+   "options": "Event"
+  },
+  {
+   "default": "FICHE-CLIENT-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "FICHE-CLIENT-.YYYY.-"
+  },
+  {
+   "fieldname": "first_approver",
+   "fieldtype": "Link",
+   "label": "First approver",
+   "options": "User",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-01 18:56:42.078971",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Fiche Client",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "fiche-organisateur",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

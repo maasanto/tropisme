@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-22 14:21:42.556984",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_jfvw",
+  "demande_de_privatisation",
+  "pr\u00e9nom",
+  "nom__pr\u00e9nom",
+  "adresse_email",
+  "n_de_t\u00e9l\u00e9phone",
+  "code_postal",
+  "column_break_ayva",
+  "type_de_client",
+  "nom_de_lentreprise",
+  "cahier_des_charges",
+  "\u00e9v\u00e9nement_section",
+  "date_souhait\u00e9e",
+  "horaires",
+  "nombre_de_personnes_attendues"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_jfvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "demande_de_privatisation",
+   "fieldtype": "Heading",
+   "label": "Demande de privatisation"
+  },
+  {
+   "fieldname": "pr\u00e9nom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom__pr\u00e9nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "adresse_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Adresse email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "n_de_t\u00e9l\u00e9phone",
+   "fieldtype": "Data",
+   "label": "N de t\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "code_postal",
+   "fieldtype": "Int",
+   "label": "Code Postal"
+  },
+  {
+   "fieldname": "column_break_ayva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_de_client",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type de client",
+   "options": "Particulier\nEntreprise\nAgence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom_de_lentreprise",
+   "fieldtype": "Data",
+   "label": "Nom de l'entreprise"
+  },
+  {
+   "description": "Merci de renseigner les dates souhait\u00e9es, le nombres de personnes attendues, les horaires, le d\u00e9roul\u00e9, le type d'espace souhait\u00e9, vos besoins en restauration et en technique.",
+   "fieldname": "cahier_des_charges",
+   "fieldtype": "Text Editor",
+   "label": "Cahier des charges",
+   "reqd": 1
+  },
+  {
+   "fieldname": "\u00e9v\u00e9nement_section",
+   "fieldtype": "Section Break",
+   "label": "\u00c9v\u00e9nement"
+  },
+  {
+   "fieldname": "date_souhait\u00e9e",
+   "fieldtype": "Date",
+   "label": "Date souhait\u00e9e"
+  },
+  {
+   "fieldname": "horaires",
+   "fieldtype": "Data",
+   "label": "Horaires"
+  },
+  {
+   "fieldname": "nombre_de_personnes_attendues",
+   "fieldtype": "Int",
+   "label": "Nombre de personnes attendues"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-01 18:55:54.995925",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Demande de privatisation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
