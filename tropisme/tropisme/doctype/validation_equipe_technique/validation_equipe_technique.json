@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 18:47:20.486092",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "evenement",
+  "reponse",
+  "line_id",
+  "employee",
+  "utilisateur"
+ ],
+ "fields": [
+  {
+   "fieldname": "evenement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ev\u00e9nement",
+   "options": "Event",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reponse",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "R\u00e9ponse",
+   "options": "Valid\u00e9\nRefus\u00e9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "line_id",
+   "fieldtype": "Data",
+   "label": "ID de ligne",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employ\u00e9",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employ\u00e9.user_id",
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Utilisateur",
+   "options": "Email",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-01 18:57:03.583832",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Validation Equipe Technique",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

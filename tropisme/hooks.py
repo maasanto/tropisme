@@ -50,9 +50,9 @@ app_license = "gpl-3.0"
 # }
 
 fixtures = [
-	{"dt": "Server Script"},
-	{"dt": "Client Script"},
-	{"dt": "Notification", "filters": {"is_standard": False}}
+	# {"dt": "Server Script"},
+	# {"dt": "Client Script"},
+	# {"dt": "Notification", "filters": {"is_standard": False}}
 ]
 
 # Generators
