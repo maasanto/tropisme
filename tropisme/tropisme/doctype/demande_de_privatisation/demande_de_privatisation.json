@@ -5,8 +5,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "column_break_jfvw",
-  "demande_de_privatisation",
   "pr\u00e9nom",
   "nom__pr\u00e9nom",
   "adresse_email",
@@ -22,15 +20,6 @@
   "nombre_de_personnes_attendues"
  ],
  "fields": [
-  {
-   "fieldname": "column_break_jfvw",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "demande_de_privatisation",
-   "fieldtype": "Heading",
-   "label": "Demande de privatisation"
-  },
   {
    "fieldname": "pr\u00e9nom",
    "fieldtype": "Data",
@@ -108,7 +97,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-01 18:55:54.995925",
+ "modified": "2024-11-05 11:14:00.839256",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Demande de privatisation",
