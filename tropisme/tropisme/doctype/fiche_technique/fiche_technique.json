@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2023-12-18 10:10:22.283477",
- "default_email_template": "Mail fiche Orga (Ne pas utiliser depuis un \u00e9v\u00e9nement)",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -20,6 +19,7 @@
   "html_40",
   "section_break_42",
   "evenement",
+  "subject",
   "naming_series",
   "first_approver"
  ],
@@ -94,11 +94,17 @@
    "label": "First approver",
    "options": "User",
    "read_only": 1
+  },
+  {
+   "fetch_from": "evenement.subject",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Sujet de l'\u00e9v\u00e9nement"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-08 13:58:55.402293",
+ "modified": "2025-01-22 16:59:53.115061",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Fiche Technique",
