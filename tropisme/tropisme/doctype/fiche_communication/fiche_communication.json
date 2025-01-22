@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2023-12-18 10:09:11.242979",
- "default_email_template": "Mail fiche Orga (Ne pas utiliser depuis un \u00e9v\u00e9nement)",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -38,6 +37,7 @@
   "pieces_jointes",
   "section_break_42",
   "evenement",
+  "sujet_de_l\u00e9v\u00e9nement",
   "naming_series",
   "first_approver"
  ],
@@ -210,11 +210,17 @@
    "label": "First approver",
    "options": "User",
    "read_only": 1
+  },
+  {
+   "fetch_from": "evenement.subject",
+   "fieldname": "sujet_de_l\u00e9v\u00e9nement",
+   "fieldtype": "Data",
+   "label": "Sujet de l'\u00e9v\u00e9nement"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-08 13:58:54.619906",
+ "modified": "2025-01-22 17:20:07.999528",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Fiche Communication",
