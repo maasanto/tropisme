@@ -128,34 +128,24 @@ fixtures = [
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Event": {
+		"before_save": [
+			"tropisme.controllers.event.update_publication",
+			"tropisme.controllers.event.email_technical_team"
+		],
+		"after_save": "tropisme.controllers.event.sync_item_booking",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"tropisme.tasks.all"
-# 	],
-# 	"daily": [
-# 		"tropisme.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"tropisme.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"tropisme.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"tropisme.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"tropisme.controllers.event.technical_team_no_reply"
+	]
+}
 
 # Testing
 # -------
