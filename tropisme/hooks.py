@@ -138,7 +138,12 @@ doc_events = {
 	},
 	"Quotations": {
 		"before_validate": "tropisme.controllers.quotation.update_project_event"
-	}
+	},
+	"Fiche Technique": {
+		"after_insert": [
+			"tropisme.controllers.event.link_attachment",
+		],
+	},
 }
 
 # Scheduled Tasks

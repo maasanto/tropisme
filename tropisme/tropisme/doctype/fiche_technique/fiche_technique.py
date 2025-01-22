@@ -5,4 +5,10 @@
 from frappe.model.document import Document
 
 class FicheTechnique(Document):
-	pass
+	def link_attachment(doc):
+		if doc.owner == "Guest":
+			for file in doc.fiches_techniques:
+				piece_jointe = frappe.db.get_value("File", dict(file_url=file.piece_jointe))
+				frappe.db.set_value("File", piece_jointe, "attached_to_doctype", doc.doctype)
+				frappe.db.set_value("File", piece_jointe, "attached_to_name", doc.name)
+
