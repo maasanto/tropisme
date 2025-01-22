@@ -136,6 +136,9 @@ doc_events = {
 		],
 		"after_save": "tropisme.controllers.event.sync_item_booking",
 	},
+	"Quotations": {
+		"before_validate": "tropisme.controllers.quotation.update_project_event"
+	}
 }
 
 # Scheduled Tasks
