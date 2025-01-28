@@ -31,6 +31,7 @@ app_license = "gpl-3.0"
 doctype_js = {
 	"Event": "public/js/event.js",
 	"Project": "public/js/project.js",
+	"Customer": "public/js/customer.js",
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
