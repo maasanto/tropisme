@@ -71,6 +71,7 @@ def sync_item_booking(doc):
 		ib.save()
 
 def technical_team_no_reply(doc):
+	# 72h by default; a setting could be added to change this
 	for line in frappe.get_all("Equipe Technique", filters={"statut": "Option"}, fields=["name", "parenttype", "creation"]):
 		if line.parenttype == "Event" and frappe.utils.time_diff_in_hours(frappe.utils.now_datetime(), line.creation) > 72:
 			frappe.db.set_value("Equipe Technique", line.name, "statut", "Aucune réponse")
