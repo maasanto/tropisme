@@ -31,3 +31,12 @@ def technical_team_assignment():
 	else:
 		frappe.response['type'] = 'redirect'
 		frappe.response.location = "/message?title=Erreur&message=Votre réponse n'a pas pu être enregistrée correctement"
+
+def get_bookings_and_assignee():
+	event = frappe.form_dict.get("event")
+	doc = frappe.get_doc("Event", event)
+
+	frappe.response['message'] = {
+		"bookings": frappe.get_all("Item Booking", filters={"event": doc.name}, fields=["name", "status"]),
+		"assignees": doc.get_assigned_users()
+	}
