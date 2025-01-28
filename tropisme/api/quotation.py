@@ -1,7 +1,6 @@
 import frappe
 import json
 
-@frappe.whitelist()
 def get_quotation_from_event():
 	event_name = frappe.form_dict.name
 	event = json.loads(frappe.form_dict.doc)

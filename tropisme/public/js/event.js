@@ -109,7 +109,7 @@ frappe.ui.form.on('Event', {
 			},
 			function(data) {
 			   return frappe.call({
-        			method: "get_quotation_from_event",
+        			method: "tropisme.api.quotation.get_quotation_from_event",
         			args: {
         				"name": frm.doc.name,
         				"doc": frm.doc,
