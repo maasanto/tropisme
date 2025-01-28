@@ -33,10 +33,9 @@
   },
   {
    "fieldname": "nom_de_l_organisme",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Nom de l organisme",
-   "options": "Organisme"
+   "label": "Nom de l organisme"
   },
   {
    "fetch_from": "nom_de_l_organisme.type_d_organisme",
@@ -86,7 +85,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-08 13:58:55.949271",
+ "modified": "2025-01-28 16:12:51.769730",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Visites",
