@@ -30,6 +30,7 @@ app_license = "gpl-3.0"
 # include js in doctype views
 doctype_js = {
 	"Event": "public/js/event.js",
+	"Project": "public/js/project.js",
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
