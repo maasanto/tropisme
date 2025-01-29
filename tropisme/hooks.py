@@ -53,11 +53,10 @@ doctype_js = {
 # 	"Role": "home_page"
 # }
 
-fixtures = [
-	# {"dt": "Server Script"},
-	# {"dt": "Client Script"},
-	# {"dt": "Notification", "filters": {"is_standard": False}}
-]
+# fixtures = [
+# 	{"dt": "Web Page", "filters": {"module": "tropisme"}},
+# 	{"dt": "Notification", "filters": {"module": "tropisme"}}
+# ]
 
 # Generators
 # ----------
@@ -91,8 +90,10 @@ fixtures = [
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "tropisme.utils.before_app_install"
-# after_app_install = "tropisme.utils.after_app_install"
+before_install = [
+	"tropisme.setup.install.add_webpage",
+	"tropisme.setup.install.add_notifications",
+]
 
 # Integration Cleanup
 # -------------------
