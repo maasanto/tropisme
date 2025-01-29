@@ -130,7 +130,7 @@ frappe.ui.form.on('Event', {
 	    }
 
 	    frappe.call({
-	       method: "get_bookings_and_assignee",
+	       method: "tropisme.api.event.get_bookings_and_assignee",
 	       args: {
 	           "event": frm.doc.name
 	       }

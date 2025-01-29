@@ -1,7 +1,11 @@
 import frappe
 import json
 
+@frappe.whitelist()
 def get_quotation_from_event():
+	if not frappe.session.user or frappe.session.user == "Guest":
+		frappe.throw(_("You are not authorized to access this resource"), frappe.PermissionError)
+
 	event_name = frappe.form_dict.name
 	event = json.loads(frappe.form_dict.doc)
 	cost_center = frappe.form_dict.cost_center

@@ -32,7 +32,11 @@ def technical_team_assignment():
 		frappe.response['type'] = 'redirect'
 		frappe.response.location = "/message?title=Erreur&message=Votre réponse n'a pas pu être enregistrée correctement"
 
+@frappe.whitelist()
 def get_bookings_and_assignee():
+	if not frappe.session.user or frappe.session.user == "Guest":
+		frappe.throw(_("You are not authorized to access this resource"), frappe.PermissionError)
+
 	event = frappe.form_dict.get("event")
 	doc = frappe.get_doc("Event", event)
 
