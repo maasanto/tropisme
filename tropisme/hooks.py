@@ -53,10 +53,12 @@ doctype_js = {
 # 	"Role": "home_page"
 # }
 
-# fixtures = [
-# 	{"dt": "Web Page", "filters": {"module": "tropisme"}},
-# 	{"dt": "Notification", "filters": {"module": "tropisme"}}
-# ]
+fixtures = [
+	# {"dt": "Web Page", "filters": {"module": "tropisme"}},
+	# {"dt": "Notification", "filters": {"module": "tropisme"}},
+	{"dt": "Event Post Category"},
+
+]
 
 # Generators
 # ----------
@@ -91,8 +93,7 @@ doctype_js = {
 # Name of the app being installed is passed as an argument
 
 before_install = [
-	"tropisme.setup.install.add_webpage",
-	"tropisme.setup.install.add_notifications",
+	"tropisme.setup.install.add_supporting_documents"
 ]
 
 # Integration Cleanup

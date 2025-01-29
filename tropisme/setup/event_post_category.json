@@ -1,0 +1,137 @@
+[
+ {
+  "designation": "Régisseur Général",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.909169",
+  "name": "Régisseur Général",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Régisseur Principal",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.927395",
+  "name": "Régisseur Principal",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Régisseur Son",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.934273",
+  "name": "Régisseur Son",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Technicien Son",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.938384",
+  "name": "Technicien Son",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Régisseur Lumière",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.943660",
+  "name": "Régisseur Lumière",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Technicien Lumière",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.950366",
+  "name": "Technicien Lumière",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Chef Electricien",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.954939",
+  "name": "Chef Electricien",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Electricien",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.960347",
+  "name": "Electricien",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Régisseur Plateau",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.964312",
+  "name": "Régisseur Plateau",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Technicien Plateau",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.968733",
+  "name": "Technicien Plateau",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Manutentionnaire / Road",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.973058",
+  "name": "Manutentionnaire / Road",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Régisseur Vidéo",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.977558",
+  "name": "Régisseur Vidéo",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Technicien Vidéo",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.981878",
+  "name": "Technicien Vidéo",
+  "scope": "Technical"
+ },
+ {
+  "designation": "Agent de Sécurité",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.985718",
+  "name": "Agent de Sécurité",
+  "scope": "Security"
+ },
+ {
+  "designation": "Agent Coordinateur ou SSIAP",
+  "docstatus": 0,
+  "doctype": "Event Post Category",
+  "item": null,
+  "modified": "2025-01-29 16:55:57.989053",
+  "name": "Agent Coordinateur ou SSIAP",
+  "scope": "Security"
+ }
+]
