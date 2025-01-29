@@ -1,11 +1,9 @@
 import frappe
 import json
 
-def add_webpage():
-	insert_docs_from_json("web_page")
-
-def add_notifications():
-	insert_docs_from_json("notification")
+def add_supporting_documents():
+	for filename in ["web_page", "notification", "event_post_category"]:
+		insert_docs_from_json(filename)
 
 
 def insert_docs_from_json(filename, display_obj_name=False):
