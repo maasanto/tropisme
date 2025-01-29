@@ -1,9 +1,9 @@
 import frappe
 
-def update_publication(doc):
+def update_publication(doc, method):
 	doc.published = 1 if doc.status =="Validated" else 0
 
-def email_technical_team(doc):
+def email_technical_team(doc, method):
 	email_template = """
 	<p>Bonjour,</p>
 
@@ -53,7 +53,7 @@ def email_technical_team(doc):
 				)
 				line.statut = "Option"
 
-def sync_item_booking(doc):
+def sync_item_booking(doc, method):
 	STATUS_MAP = {
 		"Option": "Not confirmed",
 		"Validated": "Confirmed",
@@ -70,7 +70,7 @@ def sync_item_booking(doc):
 		ib.ends_on = doc.ends_on
 		ib.save()
 
-def technical_team_no_reply(doc):
+def technical_team_no_reply(doc, method):
 	# 72h by default; a setting could be added to change this
 	for line in frappe.get_all("Equipe Technique", filters={"statut": "Option"}, fields=["name", "parenttype", "creation"]):
 		if line.parenttype == "Event" and frappe.utils.time_diff_in_hours(frappe.utils.now_datetime(), line.creation) > 72:

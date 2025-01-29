@@ -1,6 +1,6 @@
 import frappe
 
-def update_project_event(doc):
+def update_project_event(doc, method):
 	for item in doc.items:
 		for field in ["project", "event"]:
 			if not item.get(field):
