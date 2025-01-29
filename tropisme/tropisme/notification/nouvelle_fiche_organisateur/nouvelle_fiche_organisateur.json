@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2025-01-28 16:11:27.745567",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Event",
+ "enabled": 1,
+ "event": "Method",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Bonjour</p>\n\n<p>La fiche organisateur suivante a \u00e9t\u00e9 cr\u00e9\u00e9e pour l'\u00e9v\u00e9nement {{ doc.subject }}({{ doc.name }})<p>\n\n<a href=\"https://tropisme.dokos.cloud/app/fiche-organisateur?evenement={{ doc.name }}\">Lien vers la fiche organisateur</a>",
+ "message_type": "Markdown",
+ "method": "nouvelle_fiche_orga",
+ "modified": "2025-01-29 10:26:43.367770",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Nouvelle fiche organisateur",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "cc": "lbarbieri@illusion-macadam.fr",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 1,
+ "subject": "Nouvelle fiche organisateur"
+}

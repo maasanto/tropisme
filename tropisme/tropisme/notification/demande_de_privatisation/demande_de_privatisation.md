@@ -1,0 +1,4 @@
+- Nom / prénom: {{ doc.nom_prénom }}  
+- Entreprise: {{ doc.nom_de_lentreprise }}
+- Email: {{ doc.email }}
+- Cahier des charges: {{ doc.cahier_des_charges }}

@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2025-01-28 16:11:27.822818",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Validation Equipe Technique",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Bonjour,</p>\n\n{% set event = frappe.get_doc(\"Event\", doc.evenement) %}\n<p>Un technicien vient d'apporter une r\u00e9ponse \u00e0 la proposition de poste qui lui a \u00e9t\u00e9 faite pour l'\u00e9v\u00e9nement {{ event.subject }} du {{ frappe.utils.format_date(event.starts_on) }}.</p>\n\n<p>Voici la liste des r\u00e9ponses apport\u00e9es jusqu'ici:</p>\n\n<ul>\n{% for technicien in event.equipe_technique %}\n\n<li>\n    <strong>{{ technicien.employe}}: </strong>\n    <span>{{ technicien.statut }}</span>\n</li>\n\n{% endfor %}\n</ul>\n\nBonne journ\u00e9e !",
+ "message_type": "Markdown",
+ "method": "validation_equipe_technique",
+ "modified": "2025-01-29 10:26:30.983447",
+ "modified_by": "Administrator",
+ "module": "Tropisme",
+ "name": "Validation Equipe Technique",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "cc": "",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Notification Equipe Technique"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 1,
+ "subject": "Validation Equipe Technique"
+}
