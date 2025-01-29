@@ -6,7 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "type",
+  "position",
   "employe",
   "utilisateur",
   "column_break_4",
@@ -18,15 +18,6 @@
   "commentaire"
  ],
  "fields": [
-  {
-   "columns": 2,
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Type",
-   "options": "R\u00e9gisseur G\u00e9n\u00e9ral\nR\u00e9gisseur Principal\nR\u00e9gisseur Son\nTechnicien Son\nR\u00e9gisseur Lumi\u00e8re\nTechnicien Lumi\u00e8re\nChef Electricien\nElectricien\nR\u00e9gisseur Plateau\nTechnicien Plateau\nManutentionnaire / Road\nR\u00e9gisseur Vid\u00e9o\nTechnicien Vid\u00e9o",
-   "reqd": 1
-  },
   {
    "columns": 1,
    "fieldname": "employe",
@@ -89,12 +80,21 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Commentaire"
+  },
+  {
+   "columns": 1,
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Event Post Category",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-01 18:57:41.380381",
+ "modified": "2025-01-29 17:10:02.496995",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Equipe Technique",
