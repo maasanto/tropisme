@@ -1,7 +1,0 @@
-{% set site_url = frappe.utils.get_url() %}
-
-<p>Bonjour</p>
-
-<p><p>La fiche technique suivante a été créée pour l'événement {{ doc.subject }}({{ doc.name }})<p></p>
-
-<p><a href="{{ site_url }}/app/fiche-technique?evenement={{ doc.name }}">Lien vers la fiche technique</a></p>

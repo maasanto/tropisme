@@ -1,6 +1,0 @@
-<p>Bonjour</p>
-
-<p><p>La fiche client suivante a été créée pour l'événement {{ doc.subject }}({{ doc.name }})<p></p>
-
-{% set url = frappe.utils.get_url() %}
-<p><a href="{{ site_url }}/app/fiche-client?evenement={{ doc.name }}">Lien vers la fiche client</a></p>
