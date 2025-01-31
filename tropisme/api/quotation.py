@@ -23,21 +23,21 @@ def get_quotation_from_event():
 		
 	# Equipe technique
 	for agent in event.get("equipe_technique", []):
-		if frappe.db.get_value("Item", agent.get("type")):
+		if frappe.db.get_value("Event Post Category", agent["position"], "item"):
 			items.append({
-				"item_code": agent.get("type"),
+				"item_code": frappe.db.get_value("Event Post Category", agent["position"], "item"),
 				"qty": 1,
 				"event": event_name,
 				"cost_center": cost_center
 			})
 		else:
-			frappe.throw(f"Veuillez créer un article pour le type d'agent technique: {agent.get('type')}")
+			frappe.throw(f"Veuillez créer un article pour le poste : {agent.get('position')}")
 
 	# Equipe technique
 	for agent in event.get("equipe_securite", []):
-		if frappe.db.get_value("Item", agent.get("type_agent")):
+		if frappe.db.get_value("Event Post Category", agent["type"], "item"):
 			items.append({
-				"item_code": agent.get("type_agent"),
+				"item_code": frappe.db.get_value("Event Post Category", agent["type"], "item"),
 				"qty": agent.get("nombre_dheures") * agent.get("unites"),
 				"uom": agent.get("tarif"),
 				"event": event_name,
@@ -64,8 +64,7 @@ def get_quotation_from_event():
 		"party_name": event.get("customer"),
 		"cost_center": cost_center,
 		"company": frappe.db.get_value("Cost Center", cost_center, "company"),
-		"event": event_name,
-		"taxes_and_charges": "TVA 20% - HT"
+		"event": event_name
 	})
 	quotation.set_missing_values()
 
