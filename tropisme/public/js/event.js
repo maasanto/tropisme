@@ -14,7 +14,6 @@ const color_map = {
     "En ligne" : "#000000",
     "Montage/Démontage" :"#6f7071",
     "Médiation" :"#e0d6e5",
-    "Réservations Café Tropisme" :"#FFECB3",
     "Animation Pro" :"#A2D9CE"
 }
 

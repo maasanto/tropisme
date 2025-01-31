@@ -46,7 +46,7 @@ def email_technical_team(doc, method):
 				})
 				frappe.sendmail(
 					recipients=line.utilisateur,
-					subject="TROPISME // Proposition d'événement le {{ frappe.utils.format_date(line.jour) }}",
+					subject="Proposition d'événement le {{ frappe.utils.format_date(line.jour) }}",
 					message=message,
 					reference_doctype=doc.doctype,
 					reference_name=doc.name,
