@@ -1,5 +1,5 @@
 <p>Bonjour</p>
 
-<p>La fiche technique suivante a été créée pour l'événement {{ doc.subject }}({{ doc.name }})<p>
+<p><p>La fiche technique suivante a été créée pour l'événement {{ doc.subject }}({{ doc.name }})<p></p>
 
-<a href="https://tropisme.dokos.cloud/app/fiche-technique?evenement={{ doc.name }}">Lien vers la fiche technique</a>
+<p><a href="https://tropisme.dokos.cloud/app/fiche-technique?evenement={{ doc.name }}">Lien vers la fiche technique</a></p>

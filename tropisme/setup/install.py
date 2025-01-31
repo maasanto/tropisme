@@ -2,7 +2,7 @@ import frappe
 import json
 
 def add_supporting_documents():
-	for filename in ["web_page", "notification", "event_post_category"]:
+	for filename in ["web_page", "event_post_category"]:
 		insert_docs_from_json(filename)
 
 

@@ -10,17 +10,17 @@
  "event": "Method",
  "idx": 0,
  "is_standard": 1,
- "message": "<p>Bonjour</p>\n\n<p>La fiche client suivante a \u00e9t\u00e9 cr\u00e9\u00e9e pour l'\u00e9v\u00e9nement {{ doc.subject }}({{ doc.name }})<p>\n\n<a href=\"https://tropisme.dokos.cloud/app/fiche-client?evenement={{ doc.name }}\">Lien vers la fiche client</a>",
+ "message": "<p>Bonjour</p>\n\n<p><p>La fiche client suivante a \u00e9t\u00e9 cr\u00e9\u00e9e pour l'\u00e9v\u00e9nement {{ doc.subject }}({{ doc.name }})<p></p>\n\n<p><a href=\"https://tropisme.dokos.cloud/app/fiche-client?evenement={{ doc.name }}\">Lien vers la fiche client</a></p>\n",
  "message_type": "Markdown",
  "method": "nouvelle_fiche_client",
- "modified": "2025-01-29 10:25:24.931573",
+ "modified": "2025-01-31 15:17:16.471190",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Nouvelle fiche client",
  "owner": "Administrator",
  "recipients": [
   {
-   "cc": "lbarbieri@illusion-macadam.fr",
+   "cc": "",
    "receiver_by_document_field": "owner",
    "receiver_by_role": "Approbateur Fiche Client"
   }
