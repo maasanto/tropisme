@@ -4,10 +4,11 @@ def update_publication(doc, method):
 	doc.published = 1 if doc.status =="Validated" else 0
 
 def email_technical_team(doc, method):
+	site_url = frappe.utils.get_url()
 	email_template = """
 	<p>Bonjour,</p>
 
-	<p>Vous avez été proposé au poste de {{ row.position }} de l'événement {{ doc.subject }} du {{ frappe.utils.format_date(row.jour) }}, à la Halle Tropisme.</p>
+	<p>Vous avez été proposé au poste de {{ row.position }} de l'événement {{ doc.subject }} du {{ frappe.utils.format_date(row.jour) }}.</p>
 	{% if row.horaires %}
 	<p>Horaires: {{ row.horaires }}</p>
 	{% endif %}
@@ -18,7 +19,7 @@ def email_technical_team(doc, method):
 	<tbody>
 	<tr>
 	<td>
-	{% set link = "https://tropisme.dokos.cloud/affectation-evenement?id=" + row.name + "&event=" + doc.name + "&ans=" %}
+	{% set link = "{{ site_url }}" + row.name + "&event=" + doc.name + "&ans=" %}
 	{% set yes = link + "1" %}
 	<a class="btn btn-primary" href={{ yes }}>Oui</a>
 	</td>
