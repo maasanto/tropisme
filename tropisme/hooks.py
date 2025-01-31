@@ -54,9 +54,9 @@ doctype_js = {
 # }
 
 fixtures = [
-	# {"dt": "Web Page", "filters": {"module": "tropisme"}},
+	{"dt": "Web Page", "filters": {"module": "tropisme"}},
 	# {"dt": "Notification", "filters": {"module": "tropisme"}},
-	{"dt": "Event Post Category"},
+	# {"dt": "Event Post Category"},
 
 ]
 
