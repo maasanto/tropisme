@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Equipe Securite",
+ "links": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2025-01-31 14:47:26.230264",
+   "default_value": null,
+   "doc_type": "Equipe Securite",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "type",
+   "idx": 0,
+   "is_system_generated": 0,
+   "modified": "2025-01-31 14:47:26.230264",
+   "modified_by": "Administrator",
+   "module": null,
+   "name": "Equipe Securite-type-link_filters",
+   "owner": "Administrator",
+   "property": "link_filters",
+   "property_type": "JSON",
+   "row_name": null,
+   "value": "[[\"Event Post Category\",\"scope\",\"=\",\"Security\"]]"
+  }
+ ],
+ "sync_on_migrate": 1
+}
