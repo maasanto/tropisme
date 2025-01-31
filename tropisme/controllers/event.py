@@ -7,7 +7,7 @@ def email_technical_team(doc, method):
 	email_template = """
 	<p>Bonjour,</p>
 
-	<p>Vous avez été proposé au poste de {{ row.type }} de l'événement {{ doc.subject }} du {{ frappe.utils.format_date(row.jour) }}, à la Halle Tropisme.</p>
+	<p>Vous avez été proposé au poste de {{ row.position }} de l'événement {{ doc.subject }} du {{ frappe.utils.format_date(row.jour) }}, à la Halle Tropisme.</p>
 	{% if row.horaires %}
 	<p>Horaires: {{ row.horaires }}</p>
 	{% endif %}
@@ -38,7 +38,7 @@ def email_technical_team(doc, method):
 			if line.jour and doc.starts_on and doc.ends_on and not (frappe.utils.getdate(doc.ends_on) >= frappe.utils.getdate(line.jour) >= frappe.utils.getdate(doc.starts_on)):
 				frappe.throw(f"La date saisie à la ligne {line.idx} du tableau Equipe Technique n'est pas comprise dans les dates de l'événement")
 
-			if line.type and line.utilisateur and line.statut == "Notification à envoyer":
+			if line.position and line.utilisateur and line.statut == "Notification à envoyer":
 				message = frappe.render_template(email_template, {
 					"doc": doc,
 					"row": line
