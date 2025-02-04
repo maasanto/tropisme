@@ -64,8 +64,10 @@ def get_quotation_from_event():
 		"party_name": event.get("customer"),
 		"cost_center": cost_center,
 		"company": frappe.db.get_value("Cost Center", cost_center, "company"),
-		"event": event_name
+		"event": event_name,
+		"objet": event.get("subject"),
 	})
 	quotation.set_missing_values()
+	quotation.save()
 
 	frappe.response["message"] = quotation
