@@ -92,7 +92,7 @@ fixtures = [
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-before_install = [
+after_install = [
 	"tropisme.setup.install.add_supporting_documents"
 ]
 
