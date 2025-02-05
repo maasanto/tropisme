@@ -6,8 +6,10 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "column_break_vdxf",
   "position",
   "employe",
+  "nom_de_lemploy\u00e9",
   "utilisateur",
   "column_break_4",
   "statut",
@@ -75,7 +77,6 @@
    "label": "Forfait Heures"
   },
   {
-   "columns": 2,
    "fieldname": "commentaire",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -89,12 +90,25 @@
    "label": "Position",
    "options": "Event Post Category",
    "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "employe.employee_name",
+   "fieldname": "nom_de_lemploy\u00e9",
+   "fieldtype": "Data",
+   "label": "Nom de l'employ\u00e9",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_vdxf",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-29 17:10:02.496995",
+ "modified": "2025-02-05 14:49:26.486426",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Equipe Technique",
