@@ -14,7 +14,7 @@
  "message": "<p>Bonjour,</p>\n\n<p>{% set event = frappe.get_doc(\"Event\", doc.evenement) %}</p>\n\n<p>Un technicien vient d'apporter une r\u00e9ponse \u00e0 la proposition de poste qui lui a \u00e9t\u00e9 faite pour l'\u00e9v\u00e9nement {{ event.subject }} du {{ frappe.utils.format_date(event.starts_on) }}.</p>\n\n<p>Voici la liste des r\u00e9ponses apport\u00e9es jusqu'ici:</p>\n\n<ul>\n{% for technicien in event.equipe_technique %}\n\n<li>\n    <strong>{{ technicien.nom_de_lemploy\u00e9}}: </strong>\n    <span>{{ technicien.statut }}</span>\n</li>\n\n{% endfor %}\n</ul>\n\n<p>Bonne journ\u00e9e !</p>\n",
  "message_type": "Markdown",
  "method": "validation_equipe_technique",
- "modified": "2025-02-05 14:51:07.984128",
+ "modified": "2025-02-05 15:02:33.727779",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Validation Equipe Technique",
@@ -23,7 +23,7 @@
   {
    "cc": "",
    "receiver_by_document_field": "",
-   "receiver_by_role": "Notification Equipe Technique"
+   "receiver_by_role": "Event Scheduler"
   }
  ],
  "send_system_notification": 0,

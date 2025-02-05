@@ -10,9 +10,9 @@
  "event": "New",
  "idx": 0,
  "is_standard": 1,
- "message": "- Nom / pr\u00e9nom: {{ doc.nom_pr\u00e9nom }}  \n- Entreprise: {{ doc.nom_de_lentreprise }}\n- Email: {{ doc.email }}\n- Cahier des charges: {{ doc.cahier_des_charges }}",
+ "message": "<ul>\n<li>Nom / pr\u00e9nom: {{ doc.nom_pr\u00e9nom }}  </li>\n<li>Entreprise: {{ doc.nom_de_lentreprise }}</li>\n<li>Email: {{ doc.email }}</li>\n<li>Cahier des charges: {{ doc.cahier_des_charges }}</li>\n</ul>\n",
  "message_type": "Markdown",
- "modified": "2025-01-29 10:25:49.871834",
+ "modified": "2025-02-05 15:04:52.407090",
  "modified_by": "Administrator",
  "module": "Tropisme",
  "name": "Demande de privatisation",
@@ -20,7 +20,8 @@
  "recipients": [
   {
    "cc": "",
-   "receiver_by_document_field": "email_de_notification"
+   "receiver_by_document_field": "email_de_notification",
+   "receiver_by_role": "Event Scheduler"
   }
  ],
  "send_system_notification": 0,
