@@ -98,29 +98,18 @@ frappe.ui.form.on('Event', {
 	},
 	
 	make_quotation(frm) {
-	    frappe.prompt(
-			{
-				fieldtype: "Link",
-				label: "Code Analytique",
-				fieldname: "cost_center",
-				reqd: 1,
-				options: "Cost Center"
-			},
-			function(data) {
-			   return frappe.call({
-        			method: "tropisme.api.quotation.get_quotation_from_event",
-        			args: {
-        				"name": frm.doc.name,
-        				"doc": frm.doc,
-        				"cost_center": data.cost_center
-        			}
-        		}).then(r => {
-        		    console.log(r.message)
-        		    r.message.__islocal = 1
-        			const doclist = frappe.model.sync(r.message);
-        			frappe.set_route("Form", doclist[0].doctype, doclist[0].name);
-        		}); 
-			});
+		frappe.call({
+			method: "tropisme.api.quotation.get_quotation_from_event",
+			args: {
+				"name": frm.doc.name,
+				"doc": frm.doc,
+			}
+		}).then(r => {
+			console.log(r.message)
+			r.message.__islocal = 1
+			const doclist = frappe.model.sync(r.message);
+			frappe.set_route("Form", doclist[0].doctype, doclist[0].name);
+		}); 
 	},
 	
 	check_bookings_and_assignments(frm) {

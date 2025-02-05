@@ -8,7 +8,6 @@ def get_quotation_from_event():
 
 	event_name = frappe.form_dict.name
 	event = json.loads(frappe.form_dict.doc)
-	cost_center = frappe.form_dict.cost_center
 
 	items = []
 
@@ -18,7 +17,6 @@ def get_quotation_from_event():
 			"item_code": booking,
 			"qty": 1,
 			"event": event_name,
-			"cost_center": cost_center
 		})
 		
 	# Equipe technique
@@ -28,7 +26,6 @@ def get_quotation_from_event():
 				"item_code": frappe.db.get_value("Event Post Category", agent["position"], "item"),
 				"qty": 1,
 				"event": event_name,
-				"cost_center": cost_center
 			})
 		else:
 			frappe.throw(f"Veuillez créer un article pour le poste : {agent.get('position')}")
@@ -41,7 +38,6 @@ def get_quotation_from_event():
 				"qty": agent.get("nombre_dheures") * agent.get("unites"),
 				"uom": agent.get("tarif"),
 				"event": event_name,
-				"cost_center": cost_center
 			})
 		else:
 			frappe.throw(f"Veuillez créer un article pour le type d'agent de sécurité: {agent.get('type_agent')}")
@@ -51,7 +47,6 @@ def get_quotation_from_event():
 			"item_code": "Forfait Ménage",
 			"qty": 1,
 			"event": event_name,
-			"cost_center": cost_center
 		})
 
 	if not items:
@@ -62,8 +57,6 @@ def get_quotation_from_event():
 		"items": items,
 		"quotation_to": "Customer",
 		"party_name": event.get("customer"),
-		"cost_center": cost_center,
-		"company": frappe.db.get_value("Cost Center", cost_center, "company"),
 		"event": event_name,
 		"objet": event.get("subject"),
 	})
