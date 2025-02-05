@@ -1,10 +1,11 @@
 import frappe
+from frappe.utils.verified_command import get_signed_params
 
 def update_publication(doc, method):
 	doc.published = 1 if doc.status =="Validated" else 0
 
 def email_technical_team(doc, method):
-	site_url = frappe.utils.get_url()
+
 	email_template = """
 	<p>Bonjour,</p>
 
@@ -19,14 +20,11 @@ def email_technical_team(doc, method):
 	<tbody>
 	<tr>
 	<td>
-	{% set link = "{{ site_url }}" + row.name + "&event=" + doc.name + "&ans=" %}
-	{% set yes = link + "1" %}
-	<a class="btn btn-primary" href={{ yes }}>Oui</a>
+	<a class="btn btn-primary" href={{ url_yes }}>Oui</a>
 	</td>
 
 	<td>
-	{% set no = link + "0" %}
-	<a class="btn btn-default" href={{ no }}>Non</a>
+	<a class="btn btn-default" href={{ url_no }}>Non</a>
 	</td>
 	</tr>
 	</tbody>
@@ -42,7 +40,9 @@ def email_technical_team(doc, method):
 			if line.position and line.utilisateur and line.statut == "Notification à envoyer":
 				message = frappe.render_template(email_template, {
 					"doc": doc,
-					"row": line
+					"row": line,
+					"url_yes" : generate_url_affectation_page(line.name, doc.name, "1"),
+					"url_no": generate_url_affectation_page(line.name, doc.name, "0"),
 				})
 				frappe.sendmail(
 					recipients=line.utilisateur,
@@ -50,9 +50,15 @@ def email_technical_team(doc, method):
 					message=message,
 					reference_doctype=doc.doctype,
 					reference_name=doc.name,
-					expose_recipients="header"
+					expose_recipients="header",
 				)
 				line.statut = "Option"
+
+def generate_url_affectation_page(position_row_name, event_name, ans):
+	# build attendance confirmation URL
+	api_endpoint = frappe.utils.get_url("/affectation-evenement")
+	signed_params = get_signed_params({"id": position_row_name, "event": event_name, "ans": ans})
+	return f"{api_endpoint}?{signed_params}"
 
 def sync_item_booking(doc, method):
 	STATUS_MAP = {

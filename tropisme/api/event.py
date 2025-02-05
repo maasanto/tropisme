@@ -1,7 +1,10 @@
 import frappe
+from frappe.utils.verified_command import verify_request
 
 @frappe.whitelist()
 def technical_team_assignment():
+	if not verify_request():
+		return
 	if frappe.form_dict.get("event"):
 		if frappe.form_dict.get("id"):
 			status = "Validé" if frappe.form_dict.get("ans") == "1" else "Refusé"
