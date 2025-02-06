@@ -1,0 +1,1319 @@
+# French translations for Tropisme.
+# Copyright (C) 2025 Dokos SAS
+# This file is distributed under the same license as the Tropisme project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tropisme VERSION\n"
+"Report-Msgid-Bugs-To: hello@dokos.io\n"
+"POT-Creation-Date: 2025-02-06 11:47+0009\n"
+"PO-Revision-Date: 2025-02-06 11:54+0100\n"
+"Last-Translator: hello@dokos.io\n"
+"Language-Team: hello@dokos.io\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.13.1\n"
+"X-Generator: Poedit 3.5\n"
+
+#. Label of the accounting_dimensions (Section Break) field in DocType
+#. 'Quotation Item'
+#: tropisme/custom/quotation_item.json
+msgid "Accounting Dimensions"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Activité Sportive"
+msgstr ""
+
+#. Label of the published_address (Link) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Address"
+msgstr ""
+
+#. Label of the adresse_postale (Small Text) field in DocType 'Fiche Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "Adresse Postal (Facturation)"
+msgstr ""
+
+#. Label of the adresse_email (Data) field in DocType 'Demande de
+#. privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Adresse email"
+msgstr ""
+
+#. Option for the 'Type de client' (Select) field in DocType 'Demande de
+#. privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "Agence"
+msgstr ""
+
+#. Label of the allow_cancellations (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Allow cancellations"
+msgstr ""
+
+#. Label of the allow_registrations (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Allow registrations"
+msgstr ""
+
+#. Label of the allow_multiple_registrations (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Allow users to register multiple times"
+msgstr ""
+
+#. Description of the 'Allow users to register multiple times' (Check) field in
+#. DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Allows for the registration of multiple people (e.g. family) using a single user account/email address."
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Animation Pro"
+msgstr ""
+
+#. Label of the arrivée_des_agents (Datetime) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Arrivée des agents"
+msgstr ""
+
+#. Label of the section_artistes (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Artistes"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Atelier"
+msgstr ""
+
+#. Option for the 'Statut' (Select) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Aucune réponse"
+msgstr ""
+
+#. Label of the auto_repeat (Link) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Auto Repeat"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Autres"
+msgstr ""
+
+#. Label of the autres_informations (Small Text) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Autres informations"
+msgstr ""
+
+#. Option for the 'Scope' (Select) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Bar"
+msgstr ""
+
+#. Description of the 'Texte court' (Small Text) field in DocType 'Fiche
+#. Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Baseline, moins de 200 caractères"
+msgstr ""
+
+#. Label of the cleaning_team_required (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Besoin d'une équipe de ménage"
+msgstr ""
+
+#. Label of the security_team_required (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Besoin d'une équipe sécurité"
+msgstr ""
+
+#. Label of the technical_team_required (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Besoin d'une équipe technique"
+msgstr ""
+
+#. Label of the besoins_agents (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Besoins agents"
+msgstr ""
+
+#. Label of the besoins_ménage (Small Text) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Besoins ménage"
+msgstr ""
+
+#. Label of the section_billetterie (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Billetterie"
+msgstr ""
+
+#. Label of the bio_artiste (Small Text) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Bio artiste/intervenant"
+msgstr ""
+
+#. Label of the section_contact_organisateur (Section Break) field in DocType
+#. 'Fiche Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "CONTACT ORGANISATEUR"
+msgstr ""
+
+#. Label of the cahier_des_charges (Text Editor) field in DocType 'Demande de
+#. privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Cahier des charges"
+msgstr ""
+
+#. Option for the 'status' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. Label of the categorie (Data) field in DocType 'Sales Invoice Item'
+#: tropisme/custom/sales_invoice_item.json
+msgid "Catégorie"
+msgstr ""
+
+#. Option for the 'Scope' (Select) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Cleaning"
+msgstr "Nettoyage"
+
+#. Label of the customer (Link) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Client"
+msgstr ""
+
+#. Label of the code_postal (Int) field in DocType 'Demande de privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Code Postal"
+msgstr ""
+
+#. Label of the commentaire (Small Text) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Commentaire"
+msgstr ""
+
+#. Label of the commentaire_road (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Commentaire Road"
+msgstr ""
+
+#. Label of the commentaire_régisseur_général (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Commentaire Régisseur Général"
+msgstr ""
+
+#. Label of the commentaire_régisseur_lumière (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Commentaire Régisseur Lumière"
+msgstr ""
+
+#. Label of the commentaire_régisseur_son (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Commentaire Régisseur Son"
+msgstr ""
+
+#. Label of the commentaires (Small Text) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Commentaires"
+msgstr ""
+
+#. Label of the 'section_break_8' field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Communication"
+msgstr ""
+
+#. Label of the contact (Small Text) field in DocType 'Fiche Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "Contact (Facturation)"
+msgstr ""
+
+#. Label of the contact_communication_column (Column Break) field in DocType
+#. 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Contact communication"
+msgstr ""
+
+#. Label of the contact_technique_column (Column Break) field in DocType 'Fiche
+#. Technique'
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Contact technique"
+msgstr ""
+
+#: public/js/event.js:44
+msgid "Créer un devis"
+msgstr ""
+
+#. Label of a shortcut in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Créer un événement"
+msgstr ""
+
+#. Label of the date_evenement (Datetime) field in DocType 'Quotation'
+#: tropisme/custom/quotation.json
+msgid "Date de l'évènement"
+msgstr ""
+
+#. Label of the date_et_heure_de_début (Datetime) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Date et Heure de début"
+msgstr ""
+
+#. Label of the date_et_heure_de_fin (Datetime) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Date et Heure de fin"
+msgstr ""
+
+#. Label of the date_souhaitée (Date) field in DocType 'Demande de
+#. privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Date souhaitée"
+msgstr ""
+
+#. Name of a DocType
+#. Title of the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Demande de privatisation"
+msgstr ""
+
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Demandes de privatisation"
+msgstr ""
+
+#. Label of the courte_description (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Description"
+msgstr ""
+
+#. Label of the discount_description (Data) field in DocType 'Quotation'
+#. Label of the discount_description (Data) field in DocType 'Sales Invoice'
+#: tropisme/custom/quotation.json tropisme/custom/sales_invoice.json
+msgid "Description de la remise"
+msgstr ""
+
+#. Label of the designation (Data) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Designation"
+msgstr ""
+
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Devis Événementiel"
+msgstr ""
+
+#. Label of the départ_des_agents (Datetime) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Départ des agents"
+msgstr ""
+
+#. Label of the email_organisateur (Data) field in DocType 'Fiche Client'
+#. Label of the email_communication (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of the email_technique (Data) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Email"
+msgstr ""
+
+#. Label of the employee (Link) field in DocType 'Employee Participant'
+#. Name of a role
+#: tropisme/doctype/employee_participant/employee_participant.json
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "Employee"
+msgstr ""
+
+#. Name of a DocType
+#: tropisme/doctype/employee_participant/employee_participant.json
+msgid "Employee Participant"
+msgstr ""
+
+#. Label of the employe (Link) field in DocType 'Equipe Technique'
+#. Label of the employee (Link) field in DocType 'Validation Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Employé"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "En ligne"
+msgstr ""
+
+#. Option for the 'Type de client' (Select) field in DocType 'Demande de
+#. privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "Entreprise"
+msgstr ""
+
+#. Label of the equipe_menage (Table) field in DocType 'Event'
+#. Name of a DocType
+#: tropisme/custom/event.json tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Equipe Menage"
+msgstr ""
+
+#. Name of a DocType
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Equipe Securite"
+msgstr ""
+
+#. Label of the equipe_securite (Table) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Equipe Sécurité"
+msgstr ""
+
+#. Label of the equipe_technique (Table) field in DocType 'Event'
+#. Label of the section_break_62 (Section Break) field in DocType 'Event'
+#. Name of a DocType
+#: tropisme/custom/event.json
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Equipe Technique"
+msgstr ""
+
+#. Label of the equipe_public_difficile (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Equipe formée au public difficile"
+msgstr ""
+
+#. Name of a Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Evenementiel"
+msgstr "Événementiel"
+
+#. Label of the event (Link) field in DocType 'Quotation Item'
+#: tropisme/custom/quotation_item.json
+msgid "Event"
+msgstr "Événement"
+
+#. Name of a DocType
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Event Post Category"
+msgstr "Catégorie de poste événementiel"
+
+#: public/js/customer.js:7 public/js/project.js:6
+msgid "Events"
+msgstr "Événements"
+
+#. Label of the event (Link) field in DocType 'Quotation'
+#. Label of the event (Link) field in DocType 'Sales Invoice'
+#. Label of the evenement (Link) field in DocType 'Validation Equipe Technique'
+#: tropisme/custom/quotation.json tropisme/custom/sales_invoice.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Evénement"
+msgstr ""
+
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Evénements"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Exposition"
+msgstr ""
+
+#. Name of a DocType
+#. Title of the fiche-client web form
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Fiche Client"
+msgstr ""
+
+#. Name of a DocType
+#. Title of the fiche-communication web form
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Fiche Communication"
+msgstr ""
+
+#. Name of a DocType
+#. Title of the fiche-technique web form
+#. Label of a quick list in the Evenementiel Workspace
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Fiche Technique"
+msgstr ""
+
+#. Group in Event's connections
+#: tropisme/custom/event.json
+msgid "Fiches événement"
+msgstr ""
+
+#. Label of the first_approver (Link) field in DocType 'Fiche Client'
+#. Label of the first_approver (Link) field in DocType 'Fiche Communication'
+#. Label of the first_approver (Link) field in DocType 'Fiche Technique'
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "First approver"
+msgstr "Premier approbateur"
+
+#. Label of the fonction_organisateur (Data) field in DocType 'Fiche Client'
+#. Label of the fonction_communication (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of the fonction_technique (Data) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Fonction"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Foodisme"
+msgstr ""
+
+#. Label of the forfait_heures (Data) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Forfait Heures"
+msgstr ""
+
+#. Label of the féminin (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Féminin"
+msgstr ""
+
+#. Option for the 'Tarif' (Select) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Heure"
+msgstr ""
+
+#. Option for the 'Tarif' (Select) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Heure Dimanche et Jours Fériés"
+msgstr ""
+
+#. Label of the arrivee (Datetime) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Heure d'arrivée"
+msgstr ""
+
+#. Label of the debut (Datetime) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Heure de début"
+msgstr ""
+
+#. Label of the depart (Datetime) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Heure de départ"
+msgstr ""
+
+#. Label of the fin (Datetime) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Heure de fin "
+msgstr ""
+
+#. Label of the horaires (Data) field in DocType 'Demande de privatisation'
+#. Label of the horaires (Data) field in DocType 'Equipe Technique'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Horaires"
+msgstr ""
+
+#. Label of the line_id (Data) field in DocType 'Validation Equipe Technique'
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "ID de ligne"
+msgstr ""
+
+#. Label of the infos_communication_section (Section Break) field in DocType
+#. 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "INFOS COMMUNICATION"
+msgstr ""
+
+#. Label of the infos_techniques_section (Section Break) field in DocType
+#. 'Fiche Technique'
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "INFOS TECHNIQUES"
+msgstr ""
+
+#. Label of the section_infos_evenement (Section Break) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "INFOS ÉVÉNEMENT"
+msgstr ""
+
+#. Description of the 'Autres informations' (Small Text) field in DocType
+#. 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Informations spécifiques, si événement jeune public, merci d’indiquer à partir et jusqu’à quel âge il est accessible…"
+msgstr ""
+
+#. Label of the item (Link) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Item"
+msgstr "Article"
+
+#. Label of the jauge (Data) field in DocType 'Event'
+#. Label of the jauge (Data) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/custom/event.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Jauge"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Jeune public"
+msgstr ""
+
+#. Label of the jour (Date) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Jour"
+msgstr ""
+
+#: public/js/event.js:67
+msgid "L'équipe"
+msgstr ""
+
+#. Description of the 'Maximum number of registrations' (Int) field in DocType
+#. 'Event'
+#: tropisme/custom/event.json
+msgid "Leave this field empty or write 0 to not set a limit."
+msgstr "Laissez ce champ vide ou entrez 0 pour ne pas définir de limite"
+
+#. Label of the billetterie (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Lien Billetterie"
+msgstr ""
+
+#. Label of a shortcut in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Liste des intermittents"
+msgstr ""
+
+#. Header text in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Listes Rapides"
+msgstr ""
+
+#. Label of the masculin (Check) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Masculin"
+msgstr ""
+
+#. Label of the max_number_of_registrations (Int) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Maximum number of registrations"
+msgstr "Nombre maximum d’inscriptions"
+
+#. Description of the 'Pièces jointes' (Table) field in DocType 'Fiche
+#. Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid ""
+"Merci de joindre ici :<br>\n"
+"    • Un ou plusieurs visuels en bonne définition (au moins un visuel sans texte car l’image sera cropée au format 4:3 sur notre site Internet)<br>\n"
+"    • Tout élément qui nous permettra de communiquer sur votre projet (bande-annonce, vidéo live, clip, bandcamp, etc.)<br>\n"
+"    • Les logos (si logos partenaires à faire figurer, en format png avec transparence ou jpeg, numérotés par ordre d’apparition)"
+msgstr ""
+
+#. Label of the fiches_techniques (Table) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Merci de joindre ici les fiches techniques liées à votre événement"
+msgstr ""
+
+#. Description of the 'Cahier des charges' (Text Editor) field in DocType
+#. 'Demande de privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "Merci de renseigner les dates souhaitées, le nombres de personnes attendues, les horaires, le déroulé, le type d'espace souhaité, vos besoins en restauration et en technique."
+msgstr ""
+
+#. Label of the url_billeterie (Small Text) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Merci d’indiquer l’url à renseigner"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Montage/Démontage"
+msgstr ""
+
+#. Label of the mediation (Section Break) field in DocType 'Event'
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Médiation"
+msgstr ""
+
+#. Label of the ménage (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Ménage"
+msgstr ""
+
+#. Label of the n_de_téléphone (Data) field in DocType 'Demande de
+#. privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "N de téléphone"
+msgstr ""
+
+#. Content of the 'html_40' (HTML) field in DocType 'Fiche Technique'
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "NB : les hospitality rider sont à la charge de l’organisateur"
+msgstr ""
+
+#. Label of the naming_series (Select) field in DocType 'Fiche Client'
+#. Label of the naming_series (Select) field in DocType 'Fiche Communication'
+#. Label of the naming_series (Select) field in DocType 'Fiche Technique'
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "Naming Series"
+msgstr ""
+
+#. Label of the nom_organisateur (Data) field in DocType 'Fiche Client'
+#. Label of the nom_communication (Data) field in DocType 'Fiche Communication'
+#. Label of the nom_technique (Data) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Nom"
+msgstr ""
+
+#. Label of the nom__prénom (Data) field in DocType 'Demande de privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Nom "
+msgstr ""
+
+#. Label of the nom_de_lemployé (Data) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Nom de l'employé"
+msgstr ""
+
+#. Label of the nom_de_lentreprise (Data) field in DocType 'Demande de
+#. privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "Nom de l'entreprise"
+msgstr ""
+
+#. Label of the nom_evenement (Data) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Nom de l'événement"
+msgstr ""
+
+#. Label of the nom_de_la_structure (Data) field in DocType 'Fiche Client'
+#. Label of a field in the demande-de-privatisation web form
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "Nom de la structure"
+msgstr ""
+
+#. Label of the artistes (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Nom des Artistes"
+msgstr ""
+
+#. Label of the nom_du_client (Read Only) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Nom du Client"
+msgstr ""
+
+#. Label of the nombre_dheures (Float) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Nombre d'heures"
+msgstr ""
+
+#. Label of the nombre_de_personnes_attendues (Int) field in DocType 'Demande
+#. de privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Nombre de personnes attendues"
+msgstr ""
+
+#. Option for the 'Votre événement a-t-il une billetterie ?' (Select) field in
+#. DocType 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Non"
+msgstr ""
+
+#. Label of the note (Link) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Note"
+msgstr ""
+
+#. Label of the texte_médiation (Text Editor) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Notes"
+msgstr ""
+
+#. Option for the 'Statut' (Select) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Notification à envoyer"
+msgstr ""
+
+#. Label of the siret (Data) field in DocType 'Fiche Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "N° SIRET"
+msgstr ""
+
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "N° de téléphone"
+msgstr ""
+
+#. Label of the objet (Small Text) field in DocType 'Quotation'
+#. Label of the objet (Data) field in DocType 'Sales Invoice'
+#: tropisme/custom/quotation.json tropisme/custom/sales_invoice.json
+msgid "Objet"
+msgstr ""
+
+#. Option for the 'status' (Select) field in DocType 'Event'
+#. Option for the 'Statut' (Select) field in DocType 'Equipe Technique'
+#: tropisme/custom/event.json
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Option"
+msgstr ""
+
+#. Option for the 'Votre événement a-t-il une billetterie ?' (Select) field in
+#. DocType 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Oui"
+msgstr ""
+
+#. Paragraph text in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Paramètres"
+msgstr ""
+
+#. Label of the partenaires (Small Text) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Partenaires à mentionner dans la communication"
+msgstr ""
+
+#. Option for the 'Type de client' (Select) field in DocType 'Demande de
+#. privatisation'
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+msgid "Particulier"
+msgstr ""
+
+#. Option for the 'Type de passage' (Select) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Passage après événement"
+msgstr ""
+
+#. Option for the 'Type de passage' (Select) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Passage avant événement"
+msgstr ""
+
+#. Label of the passage_post_événement_entre_ (Datetime) field in DocType
+#. 'Event'
+#: tropisme/custom/event.json
+msgid "Passage post-événement entre :"
+msgstr ""
+
+#. Label of the avant (Datetime) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Passage pré-événement entre :"
+msgstr ""
+
+#. Name of a DocType
+#: tropisme/doctype/pieces_jointes_fiche_organisateur/pieces_jointes_fiche_organisateur.json
+msgid "Pieces Jointes Fiche Organisateur"
+msgstr ""
+
+#. Label of the piece_jointe (Attach) field in DocType 'Pieces Jointes Fiche
+#. Organisateur'
+#: tropisme/doctype/pieces_jointes_fiche_organisateur/pieces_jointes_fiche_organisateur.json
+msgid "Pièce jointe"
+msgstr ""
+
+#. Label of the pieces_jointes (Table) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Pièces jointes"
+msgstr ""
+
+#. Label of the pointage_préventes_date_et_nbre (Data) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Pointage préventes (date et nbre)"
+msgstr ""
+
+#. Label of the position (Link) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Position"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Privatisation"
+msgstr ""
+
+#. Label of the prix (Currency) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Prix"
+msgstr ""
+
+#. Label of the section_break_47 (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Production"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Programmation"
+msgstr ""
+
+#. Label of the project (Link) field in DocType 'Quotation Item'
+#: tropisme/custom/quotation_item.json
+msgid "Project"
+msgstr ""
+
+#. Name of a role
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "Projects Manager"
+msgstr ""
+
+#. Label of the project (Link) field in DocType 'Event'
+#. Label of the project (Link) field in DocType 'Quotation'
+#: tropisme/custom/event.json tropisme/custom/quotation.json
+msgid "Projet"
+msgstr ""
+
+#. Label of the prénom (Data) field in DocType 'Demande de privatisation'
+#. Label of the prenom_organisateur (Data) field in DocType 'Fiche Client'
+#. Label of the prenom_communication (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of the prenom_technique (Data) field in DocType 'Fiche Technique'
+#. Label of a field in the demande-de-privatisation web form
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Prénom"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Pôle bien-être"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "RDV pro"
+msgstr ""
+
+#. Group in Sales Invoice's connections
+#: tropisme/custom/sales_invoice.json
+msgid "Reference"
+msgstr "Référence"
+
+#. Option for the 'Statut' (Select) field in DocType 'Equipe Technique'
+#. Option for the 'Réponse' (Select) field in DocType 'Validation Equipe
+#. Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Refusé"
+msgstr ""
+
+#. Label of the registration_form (Link) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Registration Form"
+msgstr ""
+
+#. Label of the registration_amount (Currency) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Registration amount"
+msgstr ""
+
+#. Label of the success_message (HTML) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Registration success message"
+msgstr ""
+
+#. Label of the registrations_section (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Registrations"
+msgstr ""
+
+#. Label of the reponse (Select) field in DocType 'Validation Equipe Technique'
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Réponse"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Résidence"
+msgstr ""
+
+#. Label of the siren_number (Data) field in DocType 'Sales Invoice'
+#: tropisme/custom/sales_invoice.json
+msgid "SIREN Number"
+msgstr ""
+
+#. Label of the siret (Data) field in DocType 'Quotation'
+#. Label of the siret (Data) field in DocType 'Sales Invoice'
+#: tropisme/custom/quotation.json tropisme/custom/sales_invoice.json
+msgid "SIRET"
+msgstr ""
+
+#. Label of the structure_section (Section Break) field in DocType 'Fiche
+#. Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "STRUCTURE"
+msgstr ""
+
+#. Label of the scope (Select) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Scope"
+msgstr ""
+
+#. Option for the 'Scope' (Select) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Security"
+msgstr ""
+
+#. Description of the 'Texte de présentation complet' (Text Editor) field in
+#. DocType 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Si déroulé spécifique, programme de journée ou lineup, merci de l’indiquer"
+msgstr ""
+
+#. Description of the 'Bio artiste/intervenant' (Small Text) field in DocType
+#. 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "Si rencontre ou atelier professionnel, conférence…"
+msgstr ""
+
+#. Label of the sous_titre_evenement (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Sous-titre de l'événement"
+msgstr ""
+
+#. Label of the statut (Select) field in DocType 'Equipe Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+msgid "Statut"
+msgstr ""
+
+#. Label of the sujet_de_lévénement (Data) field in DocType 'Fiche Client'
+#. Label of the sujet_de_lévénement (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of the subject (Data) field in DocType 'Fiche Technique'
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+msgid "Sujet de l'événement"
+msgstr ""
+
+#. Name of a role
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/doctype/event_post_category/event_post_category.json
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "System Manager"
+msgstr ""
+
+#. Label of the sécurité (Section Break) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Sécurité"
+msgstr ""
+
+#. Description of the 'Partenaires à mentionner dans la communication' (Small
+#. Text) field in DocType 'Fiche Communication'
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+msgid "S’il faut mettre des logos, merci de nous les envoyer en format .jpeg et numérotés par ordre d’apparition"
+msgstr ""
+
+#. Label of the tarif (Data) field in DocType 'Event'
+#. Label of the tarif (Select) field in DocType 'Equipe Securite'
+#: tropisme/custom/event.json
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Tarif"
+msgstr ""
+
+#. Label of the tax_amount (Currency) field in DocType 'Quotation Item'
+#. Label of the tax_amount (Currency) field in DocType 'Sales Invoice Item'
+#: tropisme/custom/quotation_item.json tropisme/custom/sales_invoice_item.json
+msgid "Tax Amount"
+msgstr ""
+
+#. Label of the tax_details_section (Section Break) field in DocType 'Quotation
+#. Item'
+#. Label of the tax_details_section (Section Break) field in DocType 'Sales
+#. Invoice Item'
+#: tropisme/custom/quotation_item.json tropisme/custom/sales_invoice_item.json
+msgid "Tax Details"
+msgstr ""
+
+#. Label of the tax_rate (Float) field in DocType 'Quotation Item'
+#. Label of the tax_rate (Float) field in DocType 'Sales Invoice Item'
+#: tropisme/custom/quotation_item.json tropisme/custom/sales_invoice_item.json
+msgid "Tax Rate"
+msgstr ""
+
+#. Option for the 'Scope' (Select) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "Technical"
+msgstr ""
+
+#. Label of the texte_court (Small Text) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Texte court"
+msgstr ""
+
+#. Label of the texte_complet (Text Editor) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Texte de présentation complet"
+msgstr ""
+
+#. Label of the total_amount (Currency) field in DocType 'Quotation Item'
+#. Label of the total_amount (Currency) field in DocType 'Sales Invoice Item'
+#: tropisme/custom/quotation_item.json tropisme/custom/sales_invoice_item.json
+msgid "Total Amount"
+msgstr ""
+
+#. Option for the 'event_category' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Travaux"
+msgstr ""
+
+#. Label of the type (Link) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Type"
+msgstr ""
+
+#. Label of the type_de_client (Select) field in DocType 'Demande de
+#. privatisation'
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Type de client"
+msgstr ""
+
+#. Label of the type_passage (Select) field in DocType 'Equipe Menage'
+#: tropisme/doctype/equipe_menage/equipe_menage.json
+msgid "Type de passage"
+msgstr ""
+
+#. Label of a shortcut in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Type de poste d'événement"
+msgstr ""
+
+#. Label of the type_de_structure (Data) field in DocType 'Fiche Client'
+#. Label of a field in the fiche-client web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+msgid "Type de structure"
+msgstr ""
+
+#. Label of the telephone_organisateur (Data) field in DocType 'Fiche Client'
+#. Label of the telephone_communication (Data) field in DocType 'Fiche
+#. Communication'
+#. Label of the telephone_technique (Data) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Téléphone"
+msgstr ""
+
+#. Label of the url_communication (Small Text) field in DocType 'Fiche
+#. Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "URL"
+msgstr ""
+
+#. Label of the unites (Int) field in DocType 'Equipe Securite'
+#: tropisme/doctype/equipe_securite/equipe_securite.json
+msgid "Unités"
+msgstr ""
+
+#. Label of the utilisateur (Data) field in DocType 'Equipe Technique'
+#. Label of the utilisateur (Data) field in DocType 'Validation Equipe
+#. Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Utilisateur"
+msgstr ""
+
+#. Option for the 'status' (Select) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "Validated"
+msgstr ""
+
+#. Name of a DocType
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Validation Equipe Technique"
+msgstr ""
+
+#. Option for the 'Statut' (Select) field in DocType 'Equipe Technique'
+#. Option for the 'Réponse' (Select) field in DocType 'Validation Equipe
+#. Technique'
+#: tropisme/doctype/equipe_technique/equipe_technique.json
+#: tropisme/doctype/validation_equipe_technique/validation_equipe_technique.json
+msgid "Validé"
+msgstr ""
+
+#. Label of a field in the demande-de-privatisation web form
+#: tropisme/web_form/demande_de_privatisation/demande_de_privatisation.json
+msgid "Votre événement"
+msgstr ""
+
+#. Label of the billeterie (Select) field in DocType 'Fiche Communication'
+#. Label of a field in the fiche-communication web form
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+msgid "Votre événement a-t-il une billetterie ?"
+msgstr ""
+
+#: api/event.py:41 api/quotation.py:7
+msgid "You are not authorized to access this resource"
+msgstr ""
+
+#. Label of the apres_et (Datetime) field in DocType 'Event'
+#. Label of the avant_et (Datetime) field in DocType 'Event'
+#: tropisme/custom/event.json
+msgid "et"
+msgstr ""
+
+#. Description of the 'Item' (Link) field in DocType 'Event Post Category'
+#: tropisme/doctype/event_post_category/event_post_category.json
+msgid "item to be used in quotation"
+msgstr ""
+
+#. Label of the événement_section (Section Break) field in DocType 'Demande de
+#. privatisation'
+#. Label of the evenement (Link) field in DocType 'Fiche Client'
+#. Label of the evenement (Link) field in DocType 'Fiche Communication'
+#. Label of the evenement (Link) field in DocType 'Fiche Technique'
+#. Label of a field in the fiche-client web form
+#. Label of a field in the fiche-communication web form
+#. Label of a field in the fiche-technique web form
+#: tropisme/doctype/demande_de_privatisation/demande_de_privatisation.json
+#: tropisme/doctype/fiche_client/fiche_client.json
+#: tropisme/doctype/fiche_communication/fiche_communication.json
+#: tropisme/doctype/fiche_technique/fiche_technique.json
+#: tropisme/web_form/fiche_client/fiche_client.json
+#: tropisme/web_form/fiche_communication/fiche_communication.json
+#: tropisme/web_form/fiche_technique/fiche_technique.json
+msgid "Événement"
+msgstr ""
+
+#. Name of the Number Card'Événement programmés'
+#: tropisme/number_card/événement_programmés/événement_programmés.json
+msgid "Événement programmés"
+msgstr ""
+
+#. Label of a number card in the Evenementiel Workspace
+#: tropisme/workspace/evenementiel/evenementiel.json
+msgid "Événements programmés ce mois"
+msgstr ""
