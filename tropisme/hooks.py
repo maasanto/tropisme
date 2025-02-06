@@ -4,7 +4,8 @@ app_publisher = "Dokos SAS"
 app_description = "Personnalisations pour la Halle Tropisme"
 app_email = "hello@dokos.io"
 app_license = "gpl-3.0"
-# required_apps = []
+source_link = "https://gitlab.com/dokos/tropisme"
+required_apps = ["hrms"]
 
 # Includes in <head>
 # ------------------
@@ -58,6 +59,7 @@ fixtures = [
 	# {"dt": "Notification", "filters": {"module": "tropisme"}},
 	# {"dt": "Event Post Category"},
 	# {"dt": "Role", "filters":{"name": "Event Scheduler"}}
+	{"dt": "Employment Type", "filters": {"name": "Intermittent"}}
 ]
 
 # Generators
