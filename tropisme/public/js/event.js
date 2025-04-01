@@ -44,8 +44,20 @@ frappe.ui.form.on('Event', {
 		    frm.add_custom_button(__("Créer un devis"), () => {
 		        frm.trigger("make_quotation")
 		    })
+			if (frm.doc.technical_team_required) {
+				frm.add_custom_button(__("Notifier l'équipe technique"), () => {
+					frappe.confirm(__('Cette action enverra un mail à tout les membres de l"équipe technique pour leur proposer le poste. Voulez-vous continuer?'),
+						() => {
+							frm.trigger("email_technical_team")
+							frappe.show_alert({
+								message:__('Emails queued'),
+								indicator:'green'
+							}, 5);
+						})
+				})
+			}
 		}
-		
+
 		frm.trigger("check_bookings_and_assignments")
 	},
 	before_save(frm) {
@@ -109,6 +121,16 @@ frappe.ui.form.on('Event', {
 			r.message.__islocal = 1
 			const doclist = frappe.model.sync(r.message);
 			frappe.set_route("Form", doclist[0].doctype, doclist[0].name);
+		}); 
+	},
+
+	email_technical_team(frm) {
+		frappe.call({
+			method: "tropisme.api.event.email_technical_team",
+			args: {
+				"name": frm.doc.name,
+			}
+		}).then(r => {
 		}); 
 	},
 	

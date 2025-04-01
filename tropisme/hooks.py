@@ -140,7 +140,6 @@ doc_events = {
 	"Event": {
 		"before_save": [
 			"tropisme.controllers.event.update_publication",
-			"tropisme.controllers.event.email_technical_team"
 		],
 		"after_save": "tropisme.controllers.event.sync_item_booking",
 	},
