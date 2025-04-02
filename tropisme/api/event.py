@@ -91,13 +91,16 @@ def email_technical_team():
 				})
 				frappe.sendmail(
 					recipients=line.utilisateur,
-					subject="Proposition d'événement le {{ frappe.utils.format_date(line.jour) }}",
+					# subject="Proposition d'événement le {{ frappe.utils.format_date(line.jour) }}",
+					subject="Proposition d'événement le {{ line.jour }}",
 					message=message,
 					reference_doctype=doc.doctype,
 					reference_name=doc.name,
 					expose_recipients="header",
 				)
+				
 				line.statut = "Option"
+		doc.save(ignore_permissions=True)
 
 def generate_url_affectation_page(position_row_name, event_name, ans):
 	# build attendance confirmation URL
