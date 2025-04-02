@@ -91,8 +91,7 @@ def email_technical_team():
 				})
 				frappe.sendmail(
 					recipients=line.utilisateur,
-					# subject="Proposition d'événement le {{ frappe.utils.format_date(line.jour) }}",
-					subject="Proposition d'événement le {{ line.jour }}",
+					subject=f"Proposition d'événement le { frappe.utils.format_date(line.jour) }",
 					message=message,
 					reference_doctype=doc.doctype,
 					reference_name=doc.name,
